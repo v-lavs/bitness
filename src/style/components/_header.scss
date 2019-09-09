@@ -27,12 +27,17 @@
     margin-right: 6.25rem;
 
     .btn {
-      margin-left: 51px;
+      margin-left: 3.1875rem;
     }
 
     &__link {
       color: $primary-color;
       //letter-spacing: 1.2px;
+      &:hover,
+      &:focus {
+        color: #darken($primary-color, 40%);
+        text-decoration: underline;
+      }
     }
   }
 
@@ -46,7 +51,7 @@
     padding: 0.3125rem;
     background-color: transparent;
     border: none;
-    margin-left: 11px;
+    margin-left: 0.6875rem;
     transition: background .35s;
 
     .line {
@@ -80,13 +85,20 @@
 }
 
 @include respond-to($lg) {
-  .burger {
-    display: block !important;
-  }
-  .close-nav {
-    display: block;
-  }
-  .navbar {
-    justify-content: space-between;
+  .header {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+
+    .burger {
+      display: block !important;
+    }
+
+    .close-nav {
+      display: block;
+    }
+
+    .navbar {
+      justify-content: space-between;
+    }
   }
 }

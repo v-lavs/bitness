@@ -7,4 +7,9 @@ html {
   overflow: hidden;
 }
 
+@include respond-to($lg) {
+  .wrapper {
+    padding-top: 5rem;
+  }
+}
 

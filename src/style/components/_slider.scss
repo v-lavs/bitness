@@ -45,16 +45,12 @@
 
   .owl-next,
   .owl-prev {
-    //display: flex;
     width: 21px;
     height: 100px;
     border: none;
     pointer-events: all;
     overflow: hidden;
     text-indent: -999rem;
-    //background-color: #fff !important;
-    //background-repeat: no-repeat !important;
-    //background-position: center center !important;
     background-size: 15px auto;
     -webkit-transition: .45s;
     transition: .45s;

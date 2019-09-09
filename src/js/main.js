@@ -84,7 +84,7 @@ $(document).ready(function () {
                 items: 2
             },
             970: {
-                items: 3,
+                items: 2,
                 loop: false
             }
         }

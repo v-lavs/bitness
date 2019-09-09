@@ -1,16 +1,38 @@
 .container-video {
-  max-width: 1140px;
-  overflow: hidden;
   margin: 0 auto;
   background: $gray-blue;
-    box-shadow: 0px 30px 70px 0px rgba(47, 57, 126, 0.3);
+  box-shadow: 0 1.875rem 4.375rem 0 rgba(47, 57, 126, 0.3);
 
   .btn-youtube {
     display: block;
     position: relative;
-    width: 121px;
-    height: 121px;
+    width: 7.5625rem;
+    height: 7.5625rem;
     background: $white;
     border-radius: 50%;
+  }
+
+  .video {
+    display: block;
+    width: 100%;
+    height: 7.5625rem;
+  }
+}
+
+//=======RESPONSIVE==========
+
+@include respond-to($md) {
+  .container-video {
+    .video {
+      height: 320px;
+    }
+  }
+}
+
+@include respond-to($lg) {
+  .section-video {
+    .video {
+      height: 25rem;
+    }
   }
 }

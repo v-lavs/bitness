@@ -3,15 +3,15 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-shadow: 0 20px 60px rgba(5, 176, 254, 0.4);
-  border-radius: 10px;
+  box-shadow: 0 1.25rem 3.75rem rgba(5, 176, 254, 0.4);
+  border-radius: 0.625rem;
   background-color: $primary-color;
   border: none;
   color: $white;
   font-size: 1rem;
   //letter-spacing: 1.2px;
   padding: 18px 38px 12px 37px;
-  min-width: 181px;
+  min-width: 11.3125rem;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -19,7 +19,7 @@
   transition: box-shadow 6s;
 
   &--big {
-    padding: 27px 90px;
+    padding: 1.6875rem 5.625rem;
   }
 
   &:after,
@@ -34,7 +34,7 @@
     mix-blend-mode: color-burn;
     top: 0;
     z-index: -1;
-    border-radius: 230px;
+    border-radius: 14.375rem;
     transition: transform 2.5s, background 6s;
   }
 

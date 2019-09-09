@@ -1,10 +1,10 @@
 .section-intro {
   position: relative;
   background-image: url(../assets/img/waves.svg), url(../assets/img/waves2.svg);
-  background-position: 0 bottom, right -100px;
+  background-position: 0 bottom, right -6.25rem;
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, 800px 560px;
-  min-height: 810px;
+  background-size: contain, 50rem 35rem;
+  min-height: 50.625rem;
   background-color: $white;
   color: $dark;
   padding-top: 6.25rem;
@@ -23,7 +23,7 @@
     margin-bottom: 0;
     margin-right: 2.4375rem;
     text-align: right;
-    letter-spacing: 4.5px;
+    letter-spacing: 0.28125rem;
   }
 
   .img-title {
@@ -73,6 +73,7 @@
     display: flex;
     flex-direction: row;
   }
+
   .arrow_text {
     color: $gray-blue;
     writing-mode: vertical-rl;
@@ -83,6 +84,7 @@
     position: relative;
     width: 1.625rem;
     margin-left: 1.0625rem;
+
     &:before,
     &:after {
       position: absolute;
@@ -113,5 +115,33 @@
 
     }
 
+  }
+}
+//=================RESPONSIVE============
+
+
+@include respond-to($lg) {
+  .section-intro {
+    .block-text-decor {
+      font-size: 16.5625rem;
+      right: -5.25rem;
+      top: 2rem;
+      letter-spacing: 0.7575rem;
+    }
+    &__heading {
+       margin-left: 4.3125rem;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .section-intro {
+    padding-bottom: 7.5625rem;
+    .down {
+      right: 1.3125rem;
+    }
+    .text {
+      width: 85%;
+    }
   }
 }
