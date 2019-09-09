@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   background: $white;
-  padding: 3.125rem 0;
+  padding: 2.8125rem 0;
   z-index: 1000;
 
   .logo {
@@ -24,15 +24,15 @@
   }
 
   .right-bar {
-    margin-right: 6.25rem;
+    margin-right: 5.25rem;
 
     .btn {
-      margin-left: 3.1875rem;
+      margin-left: 3rem;
     }
 
     &__link {
       color: $primary-color;
-      //letter-spacing: 1.2px;
+      letter-spacing: 0.075rem;
       &:hover,
       &:focus {
         color: #darken($primary-color, 40%);
