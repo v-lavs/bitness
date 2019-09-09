@@ -1,0 +1,117 @@
+.section-intro {
+  position: relative;
+  background-image: url(../assets/img/waves.svg), url(../assets/img/waves2.svg);
+  background-position: 0 bottom, right -100px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, 800px 560px;
+  min-height: 810px;
+  background-color: $white;
+  color: $dark;
+  padding-top: 6.25rem;
+  padding-bottom: 8.5625rem;
+
+  &__heading {
+    position: relative;
+    max-width: 71.25rem;
+    margin-bottom: 2.875rem;
+    margin-left: 11.3125rem;
+  }
+
+  .subtitle {
+    display: block;
+    font-family: $secondary-fonts;
+    margin-bottom: 0;
+    margin-right: 2.4375rem;
+    text-align: right;
+    letter-spacing: 4.5px;
+  }
+
+  .img-title {
+    width: 100%;
+    height: auto;
+  }
+
+  .block-text-decor {
+    position: absolute;
+    color: $light-gray;
+    font-family: $secondary-fonts;
+    font-size: 26.5625rem;
+    z-index: 0;
+    right: -7.25rem;
+    top: -4rem;
+    letter-spacing: 0.7575rem;
+  }
+
+  &__content {
+    max-width: 43.8125rem;
+    padding-bottom: 3.4375rem;
+  }
+
+  .text {
+    margin-bottom: 2.1875rem;
+  }
+
+  .img-btn-decor {
+    position: absolute;
+    left: 18.6rem;
+    top: -1.5rem;
+    max-width: 4.9375rem;
+    height: auto;
+    display: block;
+    z-index: 2;
+  }
+
+  .wrap_btn {
+    position: relative;
+  }
+
+
+  .down {
+    position: absolute;
+    right: 6.3125rem;
+    bottom: 8.5625rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .arrow_text {
+    color: $gray-blue;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.084375rem;
+  }
+
+  .wrap_arrow {
+    position: relative;
+    width: 1.625rem;
+    margin-left: 1.0625rem;
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 0.125rem;
+      height: 1.125rem;
+      background-color: #a8afc1;
+      z-index: 1;
+      bottom: -0.125rem;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+      left: 0.3125rem;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+      right: 0.3125rem;
+    }
+
+    .arrow {
+      margin: 0 auto;
+      width: 0.125rem;
+      height: 13.875rem;
+      background-color: #a8afc1;
+
+    }
+
+  }
+}

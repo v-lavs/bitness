@@ -1,0 +1,77 @@
+.owl-carousel {
+  position: relative;
+  padding-bottom: 70px;
+  .card-wrap {
+  }
+
+  .item {
+    //color: $dirty;
+    padding: 0 18px;
+  }
+
+  .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -16px;
+    .owl-dot span {
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #d7dbe4;
+      margin-right: 20px;
+      &:hover {
+        background: $primary-color;
+      }
+    }
+
+    .owl-dot.active span {
+      background: $primary-color;
+    }
+  }
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+
+  .owl-next,
+  .owl-prev {
+    //display: flex;
+    width: 21px;
+    height: 100px;
+    border: none;
+    pointer-events: all;
+    overflow: hidden;
+    text-indent: -999rem;
+    //background-color: #fff !important;
+    //background-repeat: no-repeat !important;
+    //background-position: center center !important;
+    background-size: 15px auto;
+    -webkit-transition: .45s;
+    transition: .45s;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    &.disabled {
+      visibility: hidden;
+    }
+  }
+}
+
+
+@include respond-to($md) {
+  .owl-nav {
+    top: 18%;
+  }
+}

@@ -1,0 +1,80 @@
+.section-actions {
+  background-image: url(../assets/img/wave7.svg),
+  url(../assets/img/wave4.svg),
+  url(../assets/img/waves.svg);
+  background-position: 0 0, right 0, -7% bottom;
+  background-repeat: no-repeat;
+  background-size: 384px 643px, 732px 744px, 50% 50%;
+  background-color: $light;
+  padding-bottom: 150px;
+  .action__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../assets/img/line@2x.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &_item {
+      max-width: 379px;
+      padding: 0px 60px;
+      margin-bottom: 92px;
+    }
+  }
+
+  .card__heading {
+    position: relative;
+    padding-top: 60px;
+  }
+
+  .card__title {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .card__text {
+    position: relative;
+    color: $gray-blue;
+  }
+
+  .count {
+    position: absolute;
+    color: $gray;
+    font-family: $secondary-fonts;
+    font-size: 151px;
+    letter-spacing: 4px;
+    z-index: 0;
+    top: -30%;
+    left: -25%;
+  }
+
+  .wrap_btn {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  .block-reviews {
+    padding-top: 100px;
+  }
+
+  .section__title {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 95px;
+
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: $primary-color;
+      display: block;
+      width: 120px;
+      height: 5px;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+  }
+}
+

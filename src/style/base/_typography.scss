@@ -1,0 +1,81 @@
+/**
+*TEXT UTILITIES
+*/
+
+.text {
+  &_md {
+    font-size: 1.125rem;
+    //  18px
+  }
+
+  &_xl {
+    font-size: 1.875rem;
+    //  30px
+  }
+
+  &_primary {
+    color: $primary-color;
+  }
+
+  &_gray {
+    color: $gray-blue;
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+}
+
+
+.heading {
+  &_sm {
+    font-size: 1.125rem;
+  }
+  &_md {
+    font-size: 2.25rem;
+  }
+
+  &_xl {
+    font-size: 3rem;
+  }
+
+
+  //&_lg {
+  //  font-size: 1.875rem;
+  //}
+  //&_md {
+  //  font-size: 1.375rem;
+  //}
+  //&_sm {
+  //  font-size: 1.0625rem;
+  //}
+  //&_default {
+  //  font-size: 1rem;
+  //}
+}
+
+.text {
+  //&_right {
+  //  text-align: right;
+  //}
+  //&_center {
+  //  text-align: center;
+  //}
+  //&_bold {
+  //  font-weight: 700;
+  //}
+  //&_left {
+  //  text-align: left;
+  //}
+  //&_md {
+  //  font-size: 1.25rem;
+  //}
+  //&_sm {
+  //  font-size: 1.0625rem;
+  //}
+  //&_uppercase {
+  //  text-transform: uppercase;
+  //}
+
+}
+

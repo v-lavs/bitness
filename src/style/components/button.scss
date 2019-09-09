@@ -1,0 +1,63 @@
+.btn {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 20px 60px rgba(5, 176, 254, 0.4);
+  border-radius: 10px;
+  background-color: $primary-color;
+  border: none;
+  color: $white;
+  font-size: 1rem;
+  //letter-spacing: 1.2px;
+  padding: 18px 38px 12px 37px;
+  min-width: 181px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: box-shadow 6s;
+
+  &--big {
+    padding: 27px 90px;
+  }
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    height: 0;
+    padding-bottom: 200%;
+    background: darken($primary-color, 1%);
+    mix-blend-mode: color-burn;
+    top: 0;
+    z-index: -1;
+    border-radius: 230px;
+    transition: transform 2.5s, background 6s;
+  }
+
+  &:after {
+    transform: translate3d(-5%,6em,0) rotate(-45deg);
+  }
+
+  &:before {
+    transform: translate3d(5%,6em,0) rotate(0deg);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 50px -5px darken($primary-color, 20%);
+
+    &:before,
+    &:after {
+      transform: translate3d(0,-5em,0) rotate(180deg);
+      background: darken($primary-color, 20%);
+    }
+  }
+}
+
+@include respond-to($lg) {
+
+}
