@@ -1,14 +1,18 @@
 .section-about {
   position: relative;
   background-color: $light-gray;
-  padding-top: 7.5rem;
+  padding-top: 7.63rem;
 
 
   .bg-block-video {
     background-image: url(../assets/img/wave.svg);
     background-position: center 0;
-    background-repeat: no-repeat;
     background-size: contain;
+
+    //background-image: url(../assets/img/bg-video.png);
+    //background-position: 0 -300px;
+    //background-size: cover;
+    background-repeat: no-repeat;
     min-height: 48rem;
   }
 
@@ -23,40 +27,44 @@
     font-family: $secondary-fonts;
     font-size: 13.5rem;
     text-transform: uppercase;
-    letter-spacing: 1.04rem;
+    letter-spacing: 20.25px;
     transform: rotate(-90deg);
     line-height: 1;
     z-index: 0;
 
     &--left {
       left: -6%;
-      top: 24%;
+      top: 24.5%;
     }
 
     &--right {
-      top: 30%;
+      top: 31%;
       right: -5%;
     }
   }
 
   .section__title {
     max-width: 43.6875rem;
-    margin-bottom: 2.8125rem;
+    margin-bottom: 1.8125rem;
   }
 
   .section__sup-title {
-    margin-bottom: 6.25rem;
+    //padding-top: 2.999rem;
   }
 
   .container {
-    padding-top: 1.375rem;
+    padding-top: 3rem;
+  }
+
+  .section__sup-title {
+    margin-bottom: 6rem;
   }
 
   .bg-reasons-block {
     background-image: url(../assets/img/wave2.svg), url(../assets/img/wave3.svg);
-    background-position: -26% center, right 16.0625rem;
+    background-position: -26% 102% , right -35% bottom -55%;
+    background-size: 50% 120%, 70% 70%;
     background-repeat: no-repeat;
-    background-size: contain;
     padding-bottom: 12.5rem;
   }
 
@@ -64,10 +72,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1.1875rem;
+    margin-bottom: 1.45rem;
 
     &_item {
-      width: 45%;
+      width: 39%;
       max-width: 31.375rem;
       margin-bottom: 5rem;
     }
@@ -77,12 +85,16 @@
   .card {
     display: flex;
 
+    &__wrap_icon {
+      padding-top: 0.3125rem;
+    }
+
     &__content {
-      padding-left:1.8125rem;
+      padding-left: 1.8125rem;
 
     }
 
-      &__title {
+    &__title {
       margin-bottom: 1.375rem;
     }
   }
@@ -143,13 +155,16 @@
 @include respond-to($md) {
   .section-about {
     margin-bottom: 6.375rem;
+
     .action__list {
       justify-content: space-between;
+
       &_item {
         max-width: 19.375rem;
         padding: 0 1.875rem;
       }
     }
+
     .bg-block-video {
       min-height: 28rem;
     }
@@ -157,10 +172,12 @@
     .bg-reasons-block {
       padding-bottom: 1.5rem;
     }
-.reasons__list_item{
-  width: 100%;
-}
-.block-text-decor {
+
+    .reasons__list_item {
+      width: 100%;
+    }
+
+    .block-text-decor {
       font-size: 4.5em;
 
       &--left {

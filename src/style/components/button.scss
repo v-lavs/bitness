@@ -11,15 +11,26 @@
   padding: 0.8125rem 2.375rem 0.625rem 2.0625rem;
   min-width: 11.3rem;
   font-size: 1rem;
-  letter-spacing: 0.075rem;
+  letter-spacing: 1px;
   text-align: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
   transition: box-shadow 6s;
 
+  &--md {
+    padding: 1.5625rem 1.3125rem 1.5625rem 1.5625rem;
+    margin-left: 0.5rem;
+    font-size: 1.125rem;
+    min-width: 20rem;
+    letter-spacing: 1.85px;
+  }
+
   &--big {
-    padding: 1.6875rem 5.625rem;
+    min-width: 23.125rem;
+    font-size: 1.125rem;
+    padding: 1.5625rem 1.6875rem 1.625rem 2rem;
+    letter-spacing: 1.3px;
   }
 
   &:after,
@@ -56,8 +67,4 @@
       background: darken($primary-color, 20%);
     }
   }
-}
-
-@include respond-to($lg) {
-
 }

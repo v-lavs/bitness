@@ -1,9 +1,9 @@
 .section-intro {
   position: relative;
   background-image: url(../assets/img/waves.svg), url(../assets/img/waves2.svg);
-  background-position: 0 bottom, right -6.25rem;
+  background-position: -9px bottom ,right 2.9375rem top -6.8125rem;
+  background-size: 39.1875rem 49.5rem, 37.5rem 35.5625rem;
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, 50rem 35rem;
   min-height: 50.625rem;
   background-color: $white;
   color: $dark;
@@ -13,15 +13,15 @@
   &__heading {
     position: relative;
     max-width: 71.25rem;
-    margin-bottom: 2.875rem;
+    margin-bottom: 3.25rem;
     margin-left: 11.3125rem;
   }
 
   .subtitle {
     display: block;
     font-family: $secondary-fonts;
-    margin-bottom: 0;
-    margin-right: 2.4375rem;
+    margin-bottom: -3px;
+    margin-right: 2.3rem;
     text-align: right;
     letter-spacing: 0.28125rem;
   }
@@ -35,26 +35,33 @@
     position: absolute;
     color: $light-gray;
     font-family: $secondary-fonts;
-    font-size: 26.5625rem;
+    font-size: 25rem;
     z-index: 0;
-    right: -7.25rem;
-    top: -4rem;
-    letter-spacing: 0.7575rem;
+    right: -10.999rem;
+    top: -3.4375rem;
+    letter-spacing: 2.24rem;
   }
 
   &__content {
-    max-width: 43.8125rem;
-    padding-bottom: 3.4375rem;
+    max-width: 44.8125rem;
+    padding-bottom: 3.3rem;
+    padding-left: 0.625rem;
   }
 
   .text {
-    margin-bottom: 2.1875rem;
+    &_xl {
+      line-height: 1.2;
+    }
+    margin-bottom: 1.95rem;
+    &_gray {
+      line-height: 1.7;
+    }
   }
 
   .img-btn-decor {
     position: absolute;
-    left: 18.6rem;
-    top: -1.5rem;
+    left: 18.199rem;
+    top: -1.42rem;
     max-width: 4.9375rem;
     height: auto;
     display: block;
@@ -68,7 +75,7 @@
 
   .down {
     position: absolute;
-    right: 6.3125rem;
+    right: 5.125rem;
     bottom: 8.5625rem;
     display: flex;
     flex-direction: row;
