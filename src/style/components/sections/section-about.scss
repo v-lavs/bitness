@@ -249,3 +249,25 @@
     }
   }
 }
+
+@include respond-to($xs) {
+  .section-about {
+    .block-text-decor {
+      font-size: 4rem;
+
+      &--left {
+        left: -45%;
+        top: 17%;
+      }
+
+      &--right {
+        top: 18%;
+        right: -45%;
+      }
+    }
+
+    .container-video {
+      width: 100%;
+    }
+  }
+}

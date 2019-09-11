@@ -72,8 +72,9 @@
 //==============RESPONSIVE==========
 @include respond-to($sm){
   .btn{
+    &--md,
     &--big {
-      max-width: 320px;
+      min-width: 17.5rem;
       width: 100%;
     }
   }

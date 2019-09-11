@@ -169,3 +169,15 @@
     }
   }
 }
+
+@include respond-to($xs){
+  .section-intro{
+    padding-bottom: 3.5625rem;
+    .down{
+      bottom: 15.5625rem;
+    }
+    .wrap_arrow{
+      margin-left: 0rem;
+    }
+  }
+}
