@@ -76,3 +76,11 @@
     line-height: 1.33;
   }
 }
+
+@include respond-to($sm){
+  .section{
+    &__title{
+      line-height: 3.496875rem;
+    }
+  }
+}

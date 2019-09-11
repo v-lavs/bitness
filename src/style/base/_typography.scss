@@ -52,3 +52,18 @@
     }
   }
 }
+
+@include respond-to($sm){
+  .text{
+    &_xl{
+      font-size: 1.65rem;
+    }
+  }
+  .heading_md {
+    font-size: 1.75rem;
+  }
+
+  .heading_xl{
+    font-size: 2rem;
+  }
+}

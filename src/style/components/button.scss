@@ -68,3 +68,13 @@
     }
   }
 }
+
+//==============RESPONSIVE==========
+@include respond-to($sm){
+  .btn{
+    &--big {
+      max-width: 320px;
+      width: 100%;
+    }
+  }
+}

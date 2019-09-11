@@ -150,5 +150,22 @@
     .text {
       width: 85%;
     }
+    .block-text-decor {
+      font-size: 14.5625rem;
+      top: 3rem
+    }
+  }
+}
+
+@include respond-to($sm){
+  .section-intro {
+    .block-text-decor {
+      font-size: 5.5625rem;
+      top: 7rem;
+      right: -8.25rem;
+    }
+    &__heading {
+      margin-left: 3.3125rem;
+    }
   }
 }

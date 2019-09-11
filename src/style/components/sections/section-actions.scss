@@ -22,20 +22,20 @@
     background-size: 85% 89%;
 
     &_item {
-      max-width: 379px;
-      padding: 0px 60px;
-      margin-bottom: 92px;
+      max-width:23.6875rem;
+      padding: 0 3.75rem;
+      margin-bottom: 5.75rem;
     }
   }
 
   .card__heading {
     position: relative;
-    padding-top: 60px;
+    padding-top: 3.75rem;
   }
 
   .card__title {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .card__text {
@@ -47,8 +47,8 @@
     position: absolute;
     color: $gray;
     font-family: $secondary-fonts;
-    font-size: 151px;
-    letter-spacing: 4px;
+    font-size: 9.4375rem;
+    letter-spacing: 0.25rem;
     z-index: 0;
     top: -30%;
     left: -25%;
@@ -56,16 +56,16 @@
 
   .wrap_btn {
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 5.625rem;
   }
 
   .block-reviews {
-    padding-top: 100px;
+    padding-top: 6.25rem;
   }
 
   .item-review {
     &__heading {
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
     }
 
     &__text {
@@ -77,16 +77,16 @@
   .section__title {
     position: relative;
     text-align: center;
-    padding-bottom: 20px;
-    margin-bottom: 95px;
+    padding-bottom: 1.25rem;
+    margin-bottom: 5.9375rem;
 
     &:after {
       position: absolute;
       content: '';
       background-color: $primary-color;
       display: block;
-      width: 120px;
-      height: 5px;
+      width: 7.5rem;
+      height: 0.3125rem;
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
@@ -98,12 +98,40 @@
 @include respond-to($lg) {
   .section-actions {
 
+  }
+}
 
-    //.action__list_item:nth-child(2) {
-    //  order: 1;
+@include respond-to($md) {
+  .section-actions {
+    .section__header {
+      margin-bottom: 6.85rem;
+    }
+
+    .action__list_item {
+      width: 50%;
+    }
+    .block-reviews {
+      padding-top: 0.125rem;
+    }
+
+
+    .action__list_item:nth-child(3) {
+      order: 5;
+    }
+    .action__list_item:nth-child(2) {
+          order: 3;
+        }
+    //.action__list_item:nth-child(4) {
+    //  order: 6;
     //}
-    //.action__list_item:nth-child(5) {
-    //  order: 1;
-    //}
+  }
+}
+
+@include respond-to($sm){
+  .section-actions{
+    .action__list_item{
+      width: 100%;
+      margin-bottom: 3.75rem;
+    }
   }
 }

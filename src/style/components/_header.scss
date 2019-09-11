@@ -113,3 +113,29 @@
     }
   }
 }
+
+@include respond-to($sm){
+  .header {
+    .logo {
+      margin: 0 1rem;
+    }
+    .right-bar {
+      margin-right: 1rem;
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+@include respond-to($sm){
+  .header {
+    .right-bar {
+      .btn {
+        padding: 0.5rem 0.7rem;
+        min-width: 7.3rem;
+        font-size: 0.9rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

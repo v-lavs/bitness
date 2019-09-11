@@ -62,7 +62,7 @@
 
   .bg-reasons-block {
     background-image: url(../assets/img/wave2.svg), url(../assets/img/wave3.svg);
-    background-position: -26% 102% , right -35% bottom -55%;
+    background-position: -26% 102%, right -35% bottom -55%;
     background-size: 50% 120%, 70% 70%;
     background-repeat: no-repeat;
     padding-bottom: 12.5rem;
@@ -154,7 +154,17 @@
 
 @include respond-to($md) {
   .section-about {
-    margin-bottom: 6.375rem;
+    padding-top: 3.4375rem;
+    padding-bottom: 5.625rem;
+    margin-bottom: 0rem;
+
+    .container {
+      padding-top: 0;
+    }
+
+    .section__header {
+      margin-bottom: 4.2rem;
+    }
 
     .action__list {
       justify-content: space-between;
@@ -178,7 +188,7 @@
     }
 
     .block-text-decor {
-      font-size: 4.5em;
+      font-size: 6rem;
 
       &--left {
         left: -17%;
@@ -186,9 +196,55 @@
       }
 
       &--right {
-        top: 17%;
+        top: 19%;
         right: -17%;
 
+      }
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .section-about {
+    .container {
+
+    }
+
+    .section__header {
+
+    }
+
+    .action__list {
+
+
+      &_item {
+
+      }
+    }
+
+    .bg-block-video {
+      min-height: 28rem;
+    }
+
+    .bg-reasons-block {
+
+    }
+
+    .reasons__list_item {
+
+    }
+
+    .block-text-decor {
+
+
+      &--left {
+        left: -48%;
+        top: 15%;
+      }
+
+      &--right {
+        top: 18%;
+        right: -48%;
       }
     }
   }
