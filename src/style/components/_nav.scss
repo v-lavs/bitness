@@ -7,8 +7,8 @@
 
   &__list {
     display: flex;
-    flex-grow: 1;
-    max-width: 47.375rem;
+    flex-wrap: wrap;
+    max-width: 47.5rem;
     justify-content: space-between;
     width: 100%;
     margin: 0.375rem auto 0;
@@ -18,7 +18,7 @@
     position: relative;
     flex-shrink: 0;
      padding-bottom: .4rem;
-    margin-right: 4.3125rem;
+    margin-right: 2.1875rem;
   }
 
   &__link {
@@ -40,7 +40,7 @@
     z-index: 10;
   }
 
-  @include respond-to($lg) {
+  @include respond-to($xl) {
     .main-nav__item {
       margin-bottom: 1.875rem;
     }

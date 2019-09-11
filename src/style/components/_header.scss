@@ -25,10 +25,12 @@
   }
 
   .right-bar {
+    flex-shrink: 0;
+    max-width: 17.25rem;
     margin-right: 5.25rem;
 
     .btn {
-      margin-left: 3rem;
+      margin-left: 2.9375rem;
     }
 
     &__link {
@@ -100,7 +102,12 @@
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
 
+    .logo{
+      flex-shrink: 0;
+    }
+
     .burger {
+      flex-shrink: 0;
       display: block !important;
     }
 
@@ -111,7 +118,11 @@
     .navbar {
       justify-content: space-between;
     }
+    .right-bar{
+      flex-shrink: 0;
+    }
   }
+
 }
 
 @include respond-to($sm){
@@ -123,19 +134,39 @@
       margin-right: 1rem;
       display: flex;
       align-items: baseline;
-    }
-  }
-}
-
-@include respond-to($sm){
-  .header {
-    .right-bar {
       .btn {
         padding: 0.5rem 0.7rem;
         min-width: 7.3rem;
         font-size: 0.9rem;
         margin-left: 1rem;
       }
+    }
+  }
+}
+
+@include respond-to($xs){
+  .header {
+    flex-wrap: wrap;
+    .logo__img{
+      width: auto;
+    }
+    .right-bar {
+      display: flex;
+      flex-grow: 1;
+      align-items: baseline;
+      justify-content: space-evenly;
+      margin-right: 0rem;
+       .btn {
+         padding: 0.5rem 0.7rem;
+         min-width: 7.3rem;
+         font-size: 0.9rem;
+         margin-left: 1rem;
+       }
+     }
+    .burger{
+      margin-right: 1rem;
+      flex-shrink: 0;
+      order: 1;
     }
   }
 }
