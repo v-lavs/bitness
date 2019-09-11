@@ -206,36 +206,11 @@
 
 @include respond-to($sm) {
   .section-about {
-    .container {
-
-    }
-
-    .section__header {
-
-    }
-
-    .action__list {
-
-
-      &_item {
-
-      }
-    }
-
     .bg-block-video {
       min-height: 28rem;
     }
 
-    .bg-reasons-block {
-
-    }
-
-    .reasons__list_item {
-
-    }
-
     .block-text-decor {
-
 
       &--left {
         left: -48%;
