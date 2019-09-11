@@ -252,6 +252,9 @@
 
 @include respond-to($xs) {
   .section-about {
+   .card__content {
+      padding-left: 1rem;
+    }
     .block-text-decor {
       font-size: 4rem;
 

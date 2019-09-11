@@ -78,9 +78,17 @@
 }
 
 @include respond-to($sm){
+   .section{
+     &__title{
+       line-height: 3.496875rem;
+     }
+   }
+ }
+
+@include respond-to($xs){
   .section{
-    &__title{
-      line-height: 3.496875rem;
+    &__sup-title{
+      margin-bottom: 4rem;
     }
   }
 }
