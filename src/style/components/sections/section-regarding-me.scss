@@ -1,0 +1,37 @@
+.section-regarding-me {
+  background-image: url(../assets/img/styler.svg);
+  background-position: 0 0;
+  background-size: 77% 99%;;
+  background-repeat: no-repeat;
+  min-height: 1079px;
+
+  .container_full {
+    margin-top: -47px;
+  }
+
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .section__title {
+    display: flex;
+    flex-direction: column;
+    max-width: 554px;
+    font-size: 108px;
+    text-align: right;
+    .text_red {
+      margin-right: 18px;
+
+    }
+    .world-start{
+      text-align: left;
+      margin-left: 55px;
+    }
+  }
+
+}

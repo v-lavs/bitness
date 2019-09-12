@@ -7,11 +7,15 @@ html {
   overflow: hidden;
 }
 
+.container{
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+
 @include respond-to($lg) {
   .wrapper {
     padding-top: 5rem;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
   }
 }
-

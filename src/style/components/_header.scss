@@ -97,6 +97,14 @@
   }
 }
 
+@include respond-to($xl){
+  .header {
+    .main-nav__list {
+      justify-content: center;
+    }
+  }
+}
+
 @include respond-to($lg) {
   .header {
     padding-top: 1.2rem;
@@ -114,10 +122,6 @@
 
     .close-nav {
       display: block;
-    }
-
-    .navbar {
-      justify-content: space-between;
     }
     .right-bar{
       flex-shrink: 0;

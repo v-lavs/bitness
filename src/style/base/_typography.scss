@@ -21,6 +21,10 @@
     color: $gray-blue;
   }
 
+  &_red {
+    color: $red;
+  }
+
   &_uppercase {
     text-transform: uppercase;
   }
@@ -37,6 +41,10 @@
 
   &_xl {
     font-size: 3rem;
+  }
+
+  &_xxl {
+    font-size: 6.75rem;
   }
 }
 
