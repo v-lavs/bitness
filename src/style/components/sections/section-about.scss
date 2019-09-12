@@ -34,12 +34,12 @@
 
     &--left {
       left: -6%;
-      top: 24.5%;
+      top: 23.5%;
     }
 
     &--right {
-      top: 31%;
-      right: -5%;
+      top: 29%;
+      right: -6%;
     }
   }
 
@@ -72,14 +72,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.59rem;
 
     &_item {
       width: 39%;
-      max-width: 31.375rem;
-      margin-bottom: 5rem;
+      max-width: 31.25rem;
+      margin-bottom: 5.59rem;
+      flex-grow: 1;
+      &:first-child{
+        max-width: 446px;
+      }
     }
-
   }
 
   .card {
